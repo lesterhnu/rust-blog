@@ -6,6 +6,7 @@ mod response;
 mod db;
 mod api;
 mod models;
+// mod service;
 #[launch]
 fn rocket()-> _{
     rocket::build()
