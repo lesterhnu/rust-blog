@@ -1,0 +1,12 @@
+[package]
+name = "rust-blog"
+version = "0.1.0"
+edition = "2021"
+description = "使用rust rocket web框架开发的blog服务端"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rocket = {version = "0.5.0-rc.1",features=["secrets","json"]}
+sea-orm = {version = "0.7.1", features = ["sqlx-mysql","runtime-tokio-native-tls","macros"]}
+time = {version = "0.3.9",features = ["macros"]}
+lazy_static = {version = "1.4.0"}
