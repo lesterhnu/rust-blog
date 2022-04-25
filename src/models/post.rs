@@ -14,6 +14,7 @@ pub struct Model {
     pub content: String,
     pub created_at: i64,
     pub updated_at: i64,
+    #[sea_orm(default = 0)]
     pub deleted_at: i64,
 }
 
